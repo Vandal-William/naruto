@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
@@ -21,37 +22,38 @@
 
 <div class="menu-chibi">
 
-    <div class="menu-chibi__bouton">
+    <div >
 
-        <a href="#">
-            <img src="../images/bouton/naruto-bouton.png" alt="image de naruto" class="menu-chibi__image">
+        <a class="menu-chibi__bouton" href="#">
+            <img src="../images/bouton/naruto-bouton.png" width="180px" alt="image de naruto" class="menu-chibi__image">
+        </a>
+        
+        <p class="menu-chibi__sous-titre">Texte</p>
+
+    </div>
+
+    <div >
+
+        <a class="menu-chibi__bouton" href="">
+            <img src="../images/bouton/sakura-bouton.jpg" width="130px" alt="image de sakura" class="menu-chibi__image">
         </a>
         <p class="menu-chibi__sous-titre">Texte</p>
 
     </div>
 
-    <div class="menu-chibi__bouton">
+    <div >
 
-        <a href="">
-            <img src="../images/bouton/sakura-connextion.jpg" alt="image de sakura" class="menu-chibi__image">
+        <a class="menu-chibi__bouton" href="">
+            <img src="../images/bouton/sasuke-boutton.jpg" width="153px" alt="image de sasuke" class="menu-chibi__image">
         </a>
         <p class="menu-chibi__sous-titre">Texte</p>
 
     </div>
 
-    <div class="menu-chibi__bouton">
+    <div >
 
-        <a href="">
-            <img src="../images/bouton/sasuke-boutton.png" alt="image de sasuke" class="menu-chibi__image">
-        </a>
-        <p class="menu-chibi__sous-titre">Texte</p>
-
-    </div>
-
-    <div class="menu-chibi__bouton">
-
-        <a href="">
-            <img src="../images/bouton/team-7-boutton.jpg" alt="image de la team7" class="menu-chibi__image">
+        <a class="menu-chibi__bouton" href="">
+            <img src="../images/bouton/itachi-bouton.png" width="147px" alt="image de itachi" class="menu-chibi__image">
         </a>
         <p class="menu-chibi__sous-titre">Texte</p>
 
@@ -79,52 +81,76 @@
 
 </section>
 
+<h2 class="liste-personnages__titre">Les personnages</h2>
+
 <section class="liste-personnages">
 
-    <h2 class="liste-personnages__titre">Les personnages</h2>
 
-    <div class="liste-personnages__container">
+    <div class="liste-personnages__tout-les-personnages">
 
-        <div class="liste-personnages__container--image">
+        <div class="liste-personnages__container">
 
-            <img class="liste-personnages__image" src="../images/personnages/naruto-ado.png" alt="">
+            <div class="liste-personnages__container-image naruto">
+             
+                <img class="liste-personnages__image" src="../images/personnages/naruto-ado.png"  width="140px" alt="">
 
-            <h2 class="liste-personnages__nom-du-personnage">Naruto Uzumaki</h2>
+            </div>
 
-            <p class="liste-personnages__presentation-du-personnage">
-                Dans l'univers de la série, Naruto est un jeune ninja du village de Konoha. 
-                Hôte du démon renard à neuf queues, une créature qui a attaqué le village par 
-                le passé, il est rejeté par les autres villageois.
-            </p>
+            <div class="liste-personnages__info-container">
 
-        </div>
+                 <h2 class="liste-personnages__nom-du-personnage">Naruto Uzumaki</h2>
 
-        <div class="liste-personnages__container--image">
+                <p class="liste-personnages__presentation-du-personnage">
+                    Dans l'univers de la série, Naruto est un jeune ninja du village de Konoha. 
+                    Hôte du démon renard à neuf queues, une créature qui a attaqué le village par 
+                    le passé, il est rejeté par les autres villageois.
+                </p>
 
-            <img class="liste-personnages__image" src="../images/personnages/Sasuke-ado.png" alt="image de sasuke">
-
-            <h2 class="liste-personnages__nom-du-personnage">Sasuke Uchiwa</h2>
-
-            <p class="liste-personnages__presentation-du-personnage">
-                Dans l'anime et le manga, Sasuke fait partie du clan Uchiwa, un puissant 
-                clan du village de Konoha. Les membres furent exterminés lorsque Sasuke 
-                n'était encore qu'un enfant par son frère aîné, Itachi.
-            </p>
+               
+            </div>
 
         </div>
 
-        <div class="liste-personnages__container--image">
+        <div class="liste-personnages__container">
 
-            <img class="liste-personnages__image" src="../images/personnages/Sakura-ado.png" alt="image de sakura">
+            <div class="liste-personnages__container-image sasuke">
+            
+                <img class="liste-personnages__image taille" src="../images/personnages/sasuke-ado.jpg" width="285px" alt="image de sasuke">
+            
+            </div>
 
-            <h2 class="liste-personnages__nom-du-personnage">Sakura Haruno</h2>
+            <div class="liste-personnages__info-container">
 
-            <p class="liste-personnages__presentation-du-personnage">
-                Dans l'univers de la série, Sakura est une jeune kunoichi du village de Konoha. 
-                Elle fait partie de l'équipe 7, composée à l'origine, en plus d'elle-même, de Naruto 
-                Uzumaki, Sasuke Uchiwa et de leur professeur Kakashi Hatake.
-            </p>
+                <h2 class="liste-personnages__nom-du-personnage">Sasuke Uchiwa</h2>
 
+                <p class="liste-personnages__presentation-du-personnage">
+                    Dans l'anime et le manga, Sasuke fait partie du clan Uchiwa, un puissant 
+                    clan du village de Konoha. Les membres furent exterminés lorsque Sasuke 
+                    n'était encore qu'un enfant par son frère aîné, Itachi.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="liste-personnages__container">
+
+            <div class="liste-personnages__container-image sakura ">
+           
+                <img class="liste-personnages__image taille" src="../images/personnages/sakura-ado.png" width="320px" alt="image de sakura">
+         
+            </div>
+
+            <div class="liste-personnages__info-container">
+
+                <h2 class="liste-personnages__nom-du-personnage">Sakura Haruno</h2>
+
+                <p class="liste-personnages__presentation-du-personnage">
+                    Dans l'univers de la série, Sakura est une jeune kunoichi du village de Konoha. 
+                    Elle fait partie de l'équipe 7, composée à l'origine, en plus d'elle-même, de Naruto 
+                    Uzumaki, Sasuke Uchiwa et de leur professeur Kakashi Hatake.
+                </p>
+
+            </div>
         </div>
 
     </div>

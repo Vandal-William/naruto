@@ -1,0 +1,68 @@
+
+/* ================================================ MENU CHIBI ===================================================================== */
+
+.menu-chibi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-chibi__bouton{
+    max-width: 250px;
+   
+
+}
+
+.menu-chibi__image{
+    max-width: 100%;
+}
+.menu-chibi__sous-titre{
+    text-align: center;
+}
+
+/*=========================================SECTION LISTE DE PERSONNAGE =======================================================  */
+
+.liste-personnages{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.liste-personnages__tout-les-personnages{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.liste-personnages__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.liste-personnages__container-image{
+    max-width: 250px;
+    
+    
+}
+
+
+
+.liste-personnages__info-container{
+    max-width: 150px;
+    height: 450px;
+   font-size: 13px;
+    font-weight: bold;
+    
+    
+    
+    
+}
+
+.naruto{
+    margin-top: 20px;
+}
+
+
+
