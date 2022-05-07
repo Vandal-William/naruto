@@ -1,8 +1,25 @@
 body{
     margin: 0;
     padding: 0;
+    position: relative;
     
 }
+.ancre{
+ position: fixed;
+ right: 0;
+ bottom: 0;
+}
+.lien{
+    text-decoration: none; 
+}
+
+.lien__image{
+    max-width: 90px;
+}
+.lien__image:hover{
+    max-width: 120px;
+}
+
 /* ================================================ MENU CHIBI ===================================================================== */
 
 .menu-chibi{
@@ -14,13 +31,14 @@ body{
     height: 100vh;
     background-image: url(../images/header-site.jpg);
     background-size: cover;
+    padding-top: 25px;
 }
 
 .logo{
 
     font-size: 85px;
     font-weight: bold;
-    margin-top: 35px;
+    margin-top: 10px;
     text-transform: uppercase;
     margin-left: 45px;
 
@@ -35,6 +53,14 @@ body{
     padding-bottom: 0;
 }
 
+.menu-chibi__image{
+    max-width: 90px;
+}
+
+.menu-chibi__image:hover{
+    max-width: 100px;
+}
+
 .menu-chibi__sous-titre{
     text-align: center;
     margin-top: 0;
@@ -47,6 +73,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
     
@@ -60,6 +87,7 @@ body{
     font-weight: bold;
     padding-left: 15px;
     text-transform: uppercase;
+    width: 100%;
     
 
     
@@ -67,13 +95,14 @@ body{
 }
 
 .resumer__container-info{
-   box-sizing: border-box;
-   padding-left: 15px;
-   padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   align-items: center;
    gap: 35px;
+   max-width: 1200px;
    
    
 }
@@ -105,6 +134,12 @@ body{
     align-items: center;  
 }
 
+.liste-personnages__titre{
+   width: 100%;
+   text-align: start;
+    
+
+}
 
 
 .liste-personnages__tout-les-personnages{
@@ -125,15 +160,65 @@ body{
 .liste-personnages__info-container{
     border: 1px solid gray;
     display: block; 
-    height: 600px; 
+    height: 250px; 
+    width: 180px;
+    padding: 7px;
  
 }
+.liste-personnages__nom-du-personnage{
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-left: 5px;
 
+}
 
 /* ========================================= HISTOIRE DE PERSONNAGE ====================================================== */
 
+.histoire-du-personnage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .histoire-du-personnage__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90% ;
+    justify-content: center;
+    align-items: center;
+}
+
+.histoire-du-personnage__image-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.histoire-du-personnage__titre{
+    width: 100%;
+    text-align: left;
+}
+
+.histoire-du-personnage__image{
+    width: 50%;
+    height: 50vh;
+}
+
+.histoire-du-personnage__paragraphe{
+    max-width: 1200px;
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 

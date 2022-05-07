@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<header class="menu-chibi">
+<header class="menu-chibi" id="logo">
 
     <span class="logo">naru-fan</span>
 
@@ -17,7 +17,7 @@
 
         <div >
     
-            <a class="menu-chibi__bouton" href="#">
+            <a class="menu-chibi__bouton" href="#histoire">
                 <img src="../images/bouton/naruto-bouton.png" width="" alt="image de naruto" class="menu-chibi__image">
             </a>
             
@@ -27,7 +27,7 @@
     
         <div >
     
-            <a class="menu-chibi__bouton" href="">
+            <a class="menu-chibi__bouton" href="#personnages">
                 <img src="../images/bouton/personnages-bouton.png" width="" alt="image de sakura" class="menu-chibi__image">
             </a>
             <p class="menu-chibi__sous-titre">Personnages</p>
@@ -36,7 +36,7 @@
     
         <div >
     
-            <a class="menu-chibi__bouton" href="">
+            <a class="menu-chibi__bouton" href="#">
                 <img src="../images/bouton/anime-bouton.png" width="" alt="image de sasuke" class="menu-chibi__image">
             </a>
             <p class="menu-chibi__sous-titre">L'annime</p>
@@ -45,7 +45,7 @@
     
         <div >
     
-            <a class="menu-chibi__bouton" href="">
+            <a class="menu-chibi__bouton" href="#">
                 <img src="../images/bouton/les-scans-bouton.png" width="" alt="image de itachi" class="menu-chibi__image">
             </a>
             <p class="menu-chibi__sous-titre">Les scans</p>
@@ -54,7 +54,7 @@
 
         <div >
     
-            <a class="menu-chibi__bouton" href="">
+            <a class="menu-chibi__bouton" href="#">
                 <img src="../images/bouton/jeux-bouton.png" width="" alt="image de itachi" class="menu-chibi__image">
             </a>
             <p class="menu-chibi__sous-titre">Jeux video</p>
@@ -68,14 +68,18 @@
 
 
 
-<section class="resumer">
+<section class="resumer" id="histoire">
 
-    <h1 class="resumer__title">L'histoire de Naruto</h1>
+   <a class="ancre" href="#logo"><img class="lien__image" src="../images/bouton/ancre-bouton.png" alt="ancre" ></a>
+
+
+
+    <h1 class="resumer__title" >L'histoire de Naruto</h1>
 
     <div class="resumer__container-info">
 
         <img class="resumer__image" src="../images/village-de-konoha-resumer1.jpg" alt="image du village de konoah">
-
+                
         <p class="resumer__paragraphe">
 
         L'histoire commence pendant l'adolescence de Naruto, vers ses douze ans. Orphelin cancre et grand farceur, il fait toutes les bêtises possibles pour se faire remarquer. 
@@ -107,11 +111,12 @@
 
 </section>
 
-<div class="liste-personnages__titre">
-<h2 >Les personnages</h2>
-</div>
-<section class="liste-personnages">
+<section class="liste-personnages" id="personnages">
 
+    <div class="liste-personnages__titre">
+        <h2 >Les personnages</h2>
+    </div>
+        
     
 
     <div class="liste-personnages__tout-les-personnages">
@@ -126,7 +131,7 @@
 
             <div class="liste-personnages__info-container">
 
-                 <h2 class="liste-personnages__nom-du-personnage">Naruto Uzumaki</h2>
+              <a class="lien" href="#naruto" ><h2 class="liste-personnages__nom-du-personnage">Naruto Uzumaki</h2></a>   
 
                 <p class="liste-personnages__presentation-du-personnage">
                     Dans l'univers de la série, Naruto est un jeune ninja du village de Konoha. 
@@ -149,7 +154,8 @@
 
             <div class="liste-personnages__info-container">
 
-                <h2 class="liste-personnages__nom-du-personnage">Sasuke Uchiwa</h2>
+                
+             <a href="#sasuke" class="lien"> <h2 class="liste-personnages__nom-du-personnage">Sasuke Uchiwa</h2></a>
 
                 <p class="liste-personnages__presentation-du-personnage">
                     Dans l'anime et le manga, Sasuke fait partie du clan Uchiwa, un puissant 
@@ -170,7 +176,7 @@
 
             <div class="liste-personnages__info-container">
 
-                <h2 class="liste-personnages__nom-du-personnage">Sakura Haruno</h2>
+                <a href="#sakura" class="lien"><h2 class="liste-personnages__nom-du-personnage">Sakura Haruno</h2></a> 
 
                 <p class="liste-personnages__presentation-du-personnage">
                     Dans l'univers de la série, Sakura est une jeune kunoichi du village de Konoha. 
@@ -254,14 +260,18 @@
 
 </section>
 
-<section class="histoire-du-personnage">
+<section class="histoire-du-personnage" id="naruto">
 
     <div class="histoire-du-personnage__container">
             
             <h2 class="histoire-du-personnage__titre">L'histoire de naruto</h2>
 
-            <img src="../images/histoires-personnages/naruto-histoire.jpg" alt="image de naruto" class="histoire-du-personnage__image">
+        <div class="histoire-du-personnage__image-container">
 
+            <img src="../images/histoires-personnages/naruto-histoire.jpg" alt="image de naruto" class="histoire-du-personnage__image">
+            <img src="../images/histoires-personnages/histoire-naruto.jpg" alt="image de naruto" class="histoire-du-personnage__image">
+
+        </div>
 
             <p class="histoire-du-personnage__paragraphe">
                 Naruto est le fils du quatrième Hokage Minato Namikaze et de Kushina Uzumaki4. Le jour de sa naissance, le village de Konoha est attaqué par Kyûbi, le démon-renard à neuf queues, attaque initiée par Tobi, 
@@ -273,13 +283,17 @@
 
     </div>
 
-    <div class="histoire-du-personnage__container">
+    <div class="histoire-du-personnage__container"  id="sasuke">
            
 
             <h2 class="histoire-du-personnage__titre">L'histoire de Sasuke</h2>
 
-            <img src="../images/histoires-personnages/sasuke-histoire.jpg" alt="image de sasuke" class="histoire-du-personnage__image">
+            <div class="histoire-du-personnage__image-container">
 
+                    <img src="../images/histoires-personnages/sasuke-histoire.jpg" alt="image de sasuke" class="histoire-du-personnage__image">
+                    <img src="../images/histoires-personnages/histoire-sasuke.jpg" alt="image de sasuke" class="histoire-du-personnage__image">
+
+            </div>
             <p class="histoire-du-personnage__paragraphe">
                 L'enfance de Sasuke, relatée au cours du tome 25 de Naruto, montre qu'il a vécu dans l'ombre de son frère aîné Itachi Uchiwa, un surdoué du clan Uchiwa. Dans ses efforts pour gagner la reconnaissance des siens, 
                 Sasuke s'entraîne assidûment pour attirer l'attention de ses parents et surtout de son père Fugaku Uchiwa. Il n'arrive cependant jamais à surpasser les exploits réalisés par Itachi, qui est le seul à reconnaitre 
@@ -289,13 +303,18 @@
             </p>
     </div>
 
-    <div class="histoire-du-personnage__container">
+    <div class="histoire-du-personnage__container" id="sakura">
 
             
 
             <h2 class="histoire-du-personnage__titre">L'histoire de Sakura</h2>
 
-            <img src="../images/histoires-personnages/sakura-histoire.jpg" alt="image de sakura" class="histoire-du-personnage__image">
+                <div class="histoire-du-personnage__image-container">
+
+                    <img src="../images/histoires-personnages/sakura-histoire.jpg" alt="image de sakura" class="histoire-du-personnage__image">
+                    <img src="../images/histoires-personnages/histoire-sakura.jpg" alt="image de sakura" class="histoire-du-personnage__image">
+
+                </div>
 
             <p class="histoire-du-personnage__paragraphe">
                 Dans son enfance à l'académie, Sakura, timide à l'époque, se faisait traiter régulièrement de « gros front », ce qui la complexait. Ino Yamanaka lui offrit alors un ruban pour qu'elle n'ait plus peur de se montrer, 
