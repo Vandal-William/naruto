@@ -1,7 +1,11 @@
+html{
+    font-size: 10px;
+}
 body{
     margin: 0;
     padding: 0;
     position: relative;
+    font-size: 1.6rem;
     
 }
 .ancre{
@@ -14,10 +18,10 @@ body{
 }
 
 .lien__image{
-    max-width: 90px;
+    max-width: 9rem;
 }
 .lien__image:hover{
-    max-width: 120px;
+    max-width: 12rem;
 }
 
 /* ================================================ MENU CHIBI ===================================================================== */
@@ -25,22 +29,22 @@ body{
 .menu-chibi{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:flex-start;
     width: 100%;
     height: 100vh;
     background-image: url(../images/header-site.jpg);
     background-size: cover;
-    padding-top: 25px;
+    padding-top: 2.5rem;
 }
 
 .logo{
 
-    font-size: 85px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1rem;
     text-transform: uppercase;
-    margin-left: 45px;
+    margin-left: 4.5rem;
 
 
 }
@@ -48,17 +52,20 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 0.5rem;
     margin-bottom: 0;
     padding-bottom: 0;
+    
 }
 
+
 .menu-chibi__image{
-    max-width: 90px;
+    max-width: 5rem;
+    background-color: rgba(128, 128, 128, 0.435);
 }
 
 .menu-chibi__image:hover{
-    max-width: 100px;
+    max-width: 10rem;
 }
 
 .menu-chibi__sous-titre{
@@ -74,18 +81,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     
 
 }
 
 .resumer__title, .liste-personnages__titre, .histoire-du-personnage__titre{
-    border-bottom: 1px solid gray;
-    padding-bottom: 5px;
+    border-bottom: 0.1rem solid gray;
+    padding-bottom: 0.5rem;
     color: gray;
     font-weight: bold;
-    padding-left: 15px;
+    padding-left: 1.5rem;
     text-transform: uppercase;
     width: 100%;
     
@@ -95,21 +102,21 @@ body{
 }
 
 .resumer__container-info{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   gap: 35px;
-   max-width: 1200px;
+   gap: 3.5rem;
+   max-width: 120rem;
    
    
 }
 
 .resumer__image{
     width: 40%;
-    height: 300px;
+    height: 30rem;
     box-sizing: border-box;
 
 }
@@ -117,8 +124,8 @@ body{
 .resumer__paragraphe{
     width: 40%;
     box-sizing: border-box;
-    border: 1px solid grey;
-    padding: 15px;
+    border: 0.1rem solid grey;
+    padding: 1.5rem;
     border-radius: 5%;
 }
 
@@ -145,9 +152,9 @@ body{
 .liste-personnages__tout-les-personnages{
     display: flex;
     flex-wrap: nowrap;
-    max-width: 1200px;
+    max-width: 120rem;
     overflow: auto;
-    height:650px;  
+    height:65rem;  
 }
 
 .liste-personnages__container{
@@ -158,69 +165,67 @@ body{
 
 
 .liste-personnages__info-container{
-    border: 1px solid gray;
+    border: 0.1px solid gray;
     display: block; 
-    height: 250px; 
-    width: 180px;
-    padding: 7px;
+    height: 25rem; 
+    width: 18rem;
+    padding: 0.7rem;
  
 }
 .liste-personnages__nom-du-personnage{
-    border-bottom: 1px solid gray;
-    padding-bottom: 5px;
+    border-bottom: 0.1rem solid gray;
+    padding-bottom: 0.5rem;
     color: gray;
     text-transform: uppercase;
-    font-size: 16px;
-    padding-left: 5px;
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
 
 }
 
 /* ========================================= HISTOIRE DE PERSONNAGE ====================================================== */
 
-.histoire-du-personnage{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.histoire-du-personnage__container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 100vh;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 90% ;
-    justify-content: center;
-    align-items: center;
-}
-
-.histoire-du-personnage__image-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.histoire-du-personnage__titre{
+.flex-container{
     width: 100%;
-    text-align: left;
+    height: 100vh;
+    position: relative;
+}
+.flex-container__cards{
+    margin: 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    position: relative;
 }
 
-.histoire-du-personnage__image{
-    width: 50%;
-    height: 50vh;
+/* Creer une div */
+.flex-container__cards-items{ 
+    box-sizing: border-box;
+    transition: 1s;
 }
-
-.histoire-du-personnage__paragraphe{
-    max-width: 1200px;
-    border: 1px solid grey;
-    padding: 15px;
-    border-radius: 15px;
+/* creer une balise image */
+.cards-items-image{
+    width: 100%;
+    max-height: 60%;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(128, 128, 128, 0.447);
+    /* empèche les event sur click de se produire  ainsi il n'héritera pas de l'event click sur sa div parent*/
+    pointer-events: none;
 }
-
-
+/* une span */
+.cards-items-nom-prenom{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(128, 128, 128, 0.447);
+     /* empèche les event sur click de se produire, ainsi il n'héritera pas de l'event click sur sa div parent*/
+    pointer-events: none;
+    
+}
 
 
