@@ -1,0 +1,28 @@
+    <%- include('partials/header') %> 
+<!--======================================= HISTOIRE DETAILLER DES PERSONNAGES =============================================================== -->
+
+<section class="flex-container">
+
+    <h2 class="histoire-du-personnage__titre">L'histoire des personnages</h2>
+
+    <div class="flex-container__cards">
+        
+        <% for( const character of charactersList) { %>
+        
+       
+        <div class="flex-container__cards-items">
+
+            <img src=" /<%= character.picture %> " alt="<%= character.name  %>" class="cards-items-image">
+            <span class="cards-items-nom-prenom"><%= character.name %> <%= character.last_name %></span>
+            
+        </div>
+
+        <% } %>
+
+    </div>
+
+    
+</section>
+    <%- include('partials/footer') %>
+</body>
+</html>
